@@ -11,7 +11,7 @@ const priceRoute = require("./router/priceRouter");
 //Cors Policy
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173" , "*"],
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
   })
